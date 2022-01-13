@@ -1,3 +1,47 @@
 body {
   background: blanchedalmond;
+  height: 100vh;
+  padding: 1rem;
+  margin:0;
 }
+
+.container{
+ 
+  height: 100vh;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:1rem;
+
+}
+*{
+  border: 1px solid green;
+}
+
+.a{
+  width:100%;
+}
+
+.b{
+  flex-grow: 8;
+}
+
+.c{
+  flex-grow: 2;
+}
+
+@media (max-width: 700px){
+  .container{
+  flex-direction: column;
+  }
+  .b{
+    width:100%;
+    flex-grow:0;
+  }
+  .c{
+    width:100%;
+    flex-grow:0;
+  }
+}
+
+/* media querys*/
