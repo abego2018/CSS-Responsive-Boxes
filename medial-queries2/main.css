@@ -1,3 +1,67 @@
 body {
   background: papayawhip;
+  height: 100vh;
+  padding: 1rem;
+  margin:0;
+}
+
+*{
+  border: 1px solid brown;
+}
+
+.container{
+ 
+  height: 100vh;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:1rem;
+
+}
+
+.a{
+  width: 100%;
+}
+
+.b{
+  width: 100%;
+} 
+
+.c{
+  width: 30%;
+}
+
+.d{
+  width:30%;
+}
+
+.e{
+  width: 30%;
+}
+
+.f{
+  width:100%;
+}
+
+@media (min-width: 700px){
+  .container{
+  flex-wrap:wrap;
+  }
+  .b{
+    width:75%;
+    flex-grow:0;
+  }
+  .c{
+    width:24%;
+    flex-grow:0;
+  }
+  .d{
+    width:24%;
+    flex-grow:0;
+  }
+.e{
+  width: 24%;
+  flex-grow:0;
+}
+
 }
